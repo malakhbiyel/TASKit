@@ -1,0 +1,269 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background-image: url('background.jpg');
+  background-size:auto; 
+}
+
+h2 {
+  color: #333;
+}
+
+
+#taskList {
+
+  margin: 50px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#addTaskForm {
+
+  margin: 50px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#home {
+  
+  margin: 50px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.importance-section {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  font-size: smaller;
+}
+
+.toggle-button {
+  padding: 8px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: #2980b9;
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-button {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #2980b9;
+}
+
+
+/* Table Styles */
+#tasks {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#tasks th, #tasks td {
+  padding: 2%;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+#tasks th {
+  background-color: #3498db;
+  color: white;
+}
+
+#tasks tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  position: fixed;
+  background-color: #3498db;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  z-index: 1000; 
+}
+
+
+.logo img {
+  width: 150px; 
+  margin-left: 20px; 
+}
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin-right: 20px; 
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0; 
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffff;
+}
+
+
+.home {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Styling for the Welcome Section */
+.header {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #3498db;
+}
+
+header p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em;
+  color: #555;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.task-info {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.task-info h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.task-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-info li {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #555;
+  list-style: none;
+  padding-left: 25px; 
+  background-image: url(https://cdn.iconscout.com/icon/free/png-256/free-check-circle-1781302-1513623.png);
+  background-size: 15px 15px; 
+  background-repeat: no-repeat; 
+  background-position: left center; 
+}
+
+.image-section {
+  flex: 1;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-section img:hover {
+  transform: scale(1.05);
+}
+
+.header1 {
+  margin-bottom: 30px;
+}
+
+.delete-button {
+  padding: 8px 10px;
+  background-color: #e74c3c; 
+  color: #fff; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out; 
+}
+
+.delete-button:hover {
+  background-color: #c0392b; 
+}

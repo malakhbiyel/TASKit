@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TASKit</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="design.png" alt="Task Manager logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" onclick="showHome()">Home</a></li>
+      <li><a href="#taskList">Task List</a></li>
+      <li><a href="#addTaskForm">Add Task</a></li>
+    </ul>
+  </nav>
+  <div class="header" id="home">
+    <header>
+      <h1>Welcome to Taskit</h1>
+      <p>Your Personal Task Maestro</p>
+    </header>
+    <div class="main-content">
+      <div class="task-info">
+        <h2>Unleash Your Productivity with Taskit:</h2>
+        <ul>
+          <li>Add new tasks with ease</li>
+          <li>Assign and prioritize tasks effortlessly</li>
+          <li>Efficiently organize by date, time, and more</li>
+        </ul>
+      </div>
+      <div class="image-section">
+        <img src="logo.png" alt="Taskit Logo">
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div id="taskList">
+    <h2>Task List</h2>
+    <table id="tasks">
+      <thead>
+        <tr>
+          <th>Task Name</th>
+          <th>Start Date</th>
+          <th>Start Time</th>
+          <th>End Date</th>
+          <th>End Time</th>
+          <th>Importance</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="taskRows">
+      </tbody>
+    </table>
+  </div>
+
+  <div id="addTaskForm" class="header1">
+    <h2>Add New Task</h2>
+    <form id="taskForm">
+      <label for="taskName">Task Name:</label>
+      <input type="text" id="taskName" required><br>
+
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" required><br>
+
+      <label for="startTime">Start Time:</label>
+      <input type="time" id="startTime" required><br>
+
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" required><br>
+
+      <label for="endTime">End Time:</label>
+      <input type="time" id="endTime" required><br>
+
+      <div class="importance-section">
+        <input type="checkbox" class="toggle-button" onclick="toggleImportance()" />
+        <label>Mark as important</label>
+      </div>
+
+      <div class="buttons-section">
+        <button type="button" class="add-button" onclick="addTask()">Add Task</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
